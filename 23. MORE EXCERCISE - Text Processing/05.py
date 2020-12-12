@@ -1,1 +1,13 @@
-# TODO: https://judge.softuni.bg/Contests/Practice/Index/1741#4
+title = input()
+content = input()
+comments = []
+
+line = input()
+while line != 'end of comments':
+    comments.append(line)
+    line = input()
+
+print(f'<h1>\n    {title}\n</h1>')
+print(f'<article>\n    {content}\n</article>')
+for comment in comments:
+    print(f'<div>\n    {comment}\n</div>')

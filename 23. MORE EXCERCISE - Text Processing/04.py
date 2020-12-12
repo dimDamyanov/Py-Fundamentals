@@ -1,1 +1,38 @@
-# TODO: https://judge.softuni.bg/Contests/Practice/Index/1741#3
+morse = {
+    ".-": "A",
+    "-...": "B",
+    "-.-.": "C",
+    "-..": "D",
+    ".": "E",
+    "..-.": "F",
+    "--.": "G",
+    "....": "H",
+    "..": "I",
+    ".---": "J",
+    "-.-": "K",
+    ".-..": "L",
+    "--": "M",
+    "-.": "N",
+    "---": "O",
+    ".--.": "P",
+    "--.-": "Q",
+    ".-.": "R",
+    "...": "S",
+    "-": "T",
+    "..-": "U",
+    "...-": "V",
+    ".--": "W",
+    "-..-": "X",
+    "-.--": "Y",
+    "--..": "Z"
+}
+
+line = input()
+line = line.split()
+res = []
+for c in line:
+    if c == '|':
+        res.append(' ')
+    else:
+        res.append(morse[c])
+print(''.join(res))
